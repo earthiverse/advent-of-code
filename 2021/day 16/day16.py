@@ -125,16 +125,19 @@ def parseSub(b):
             [b, v2] = parseSub(b)
 
             if type == 5:
+                # Greater Than Operator
                 if v1 > v2:
                     return [b, 1]
                 else:
                     return [b, 0]
             elif type == 6:
+                # Less Than Operator
                 if v1 < v2:
                     return [b, 1]
                 else:
                     return [b, 0]
             elif type == 7:
+                # Equal To Operator
                 if v1 == v2:
                     return [b, 1]
                 else:
